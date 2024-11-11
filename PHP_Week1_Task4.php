@@ -15,5 +15,5 @@ function checkChet(int $number): string
 // Использование функции
 $number = 4;
 $result = checkChet($number); //Сохраняем результат в переменной
-echo $result; //Выводим результат
+echo $result; //Выводит результат
 ?>
