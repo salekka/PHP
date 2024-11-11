@@ -1,6 +1,6 @@
 <?php
 //Проверка на отрицательное число
-function checkNegative(float $number) 
+function checkNegative(float $number) : string 
 {
     if ($number < 0) 
     {
