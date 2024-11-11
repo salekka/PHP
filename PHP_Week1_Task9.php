@@ -38,7 +38,7 @@ function arrayMinus(array $array, string $addsymbol): array
 
 //Использование функции
 $array = ["hello", "world", "TAU", "University", "Task"];
-$addsymbol = 'T'; //Символ для добавления
+$addsymbol = 'DA'; //Символ для добавления
 $result = arrayMinus($array, $addsymbol); //Обрабатывает массив
 
 //Результат
