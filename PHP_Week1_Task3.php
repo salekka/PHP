@@ -22,9 +22,12 @@ function lastSymbol(string $string): ?string
 $string = "Hello";
 $lastChar = lastSymbol($string); //Сохраняет результат в переменной
 
-if ($lastChar !== null) {
+if ($lastChar !== null) 
+{
     echo "Последний символ строки '$string': '$lastChar'"; //Вывод результата
-} else {
+} 
+else
+{
     echo "Строка пуста"; //Ошибка, если строка пуста
 }
 ?>
