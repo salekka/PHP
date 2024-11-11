@@ -1,6 +1,6 @@
 <?php
 // Получение длины строки
-function stringLength(string $string): int 
+function stringLength(string $string)
 {
     $length = mb_strlen($string); // Используем mb_strlen для корректного подсчета длины строки с учетом многобайтовых символов
     return $length; // Возвращаем длину строки
