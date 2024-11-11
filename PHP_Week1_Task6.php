@@ -17,7 +17,7 @@ function firstNumber(int $number): ?string //?string означает, что ф
 }
 
 //Использование функции
-$number = -7952812; 
+$number = -896356; 
 $firstDigit = firstNumber($number); //Сохраняет результат в переменной
 
 if ($firstDigit != null) 
