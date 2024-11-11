@@ -19,7 +19,7 @@ function lastSymbol(string $string): ?string
 }
 
 //Использование функции
-$string = "Hello";
+$string = "Vsem_ky";
 $lastChar = lastSymbol($string); //Сохраняет результат в переменной
 
 if ($lastChar !== null) 
