@@ -1,6 +1,6 @@
 <?php
 //Получение предпослденего символа строки
-function showword(string $stringword) 
+function showWord(string $stringword) 
 {
     //Проверка строки на более одного символа
     if (strlen($stringword) > 1) //strlen — Получает длину строки
@@ -17,5 +17,5 @@ function showword(string $stringword)
 
 //Использование функции
 $stringword = "Seven7"; 
-showword($stringword);
+showWord($stringword);
 ?>
