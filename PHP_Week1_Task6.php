@@ -1,22 +1,32 @@
 <?php
 //Получение первой цифры числа
-function firstNumber(int $number) 
+function firstNumber(int $number): ?string 
 {
-    //Преобразуем число в строку
-    $numberstring = (string)$number;//Преобразование в строку позволяет легко удалить знак минус и извлечь первую цифру
+    //Преобразует число в строку
+    $numberstring = (string)$number; //Преобразование в строку позволяет легко удалить знак минус и извлечь первую цифру
 
-    //Знак минус для отрицательных чисел
+    //Знак - для отрицательных чисел
     if ($numberstring[0] == '-') 
     {
-        $numberstring = substr($numberstring, 1);
+        $numberstring = substr($numberstring, 1); //substr — Возвращает подстроку
     }
 
     //Первая цифра
     $firstnumber = $numberstring[0];
-    echo "Первая цифра числа $number: $firstnumber";
+
+    return $firstnumber; //Возвращает первую цифру
 }
 
 //Использование функции
 $number = -7952812; 
-firstNumber($number);
+$firstDigit = firstNumber($number); //Сохраняет результат в переменной
+
+if ($firstDigit != null) 
+{
+    echo "Первая цифра числа $number: $firstDigit"; //Выводит результат
+} 
+else 
+{
+    echo "Число не содержит цифр"; //Ошибка если это случится
+}
 ?>
