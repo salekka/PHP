@@ -1,25 +1,30 @@
 <?php
 //Получение последнего символа строки
-function lastSymbol(string $string) 
+function lastSymbol(string $string): ?string 
 {
-    //Получаем длину строки 
-    $length = strlen($string);
+    //Используем mb_strlen для корректного подсчета длины строки
+    $length = mb_strlen($string);
     
     //Проверка на пустую строку
     if ($length > 0) 
     {
-        //Получаем последний символ
-        $lastsymbol = substr($string, -1);//substr — Возвращает подстроку
-        echo "Последний символ строки '$string': '$lastsymbol'"; //Результат
+        //Получаем последний символ, используя mb_substr для многобайтовых строк
+        $lastsymbol = mb_substr($string, -1); //mb_substr — Возвращает подстроку
+        return $lastsymbol; //Возвращает последний символ
     } 
     else 
     {
-        echo "Строка пуста";
+        return null; //Возвращает null, если строка пуста
     }
 }
 
-//Использование функции
+// Использование функции
 $string = "Hello";
-lastSymbol($string);
+$lastChar = lastSymbol($string); //Сохраняет результат в переменной
+
+if ($lastChar !== null) {
+    echo "Последний символ строки '$string': '$lastChar'"; //Вывод результата
+} else {
+    echo "Строка пуста"; //Ошибка, если строка пуста
+}
 ?>
-//можно также использовать mb_substr и mb_strlen для более точного ответа 
