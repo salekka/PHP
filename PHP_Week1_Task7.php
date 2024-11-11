@@ -11,7 +11,7 @@ function showWord(string $stringword): ?string
     } 
     else 
     {
-        return null; // Возвращаем null, если строка содержит менее двух символов
+        return null; //Возвращаем null, если строка содержит менее двух символов
     }
 }
 
