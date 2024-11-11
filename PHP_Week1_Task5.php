@@ -1,6 +1,6 @@
 <?php
 //Проверка совпадения первых букв двух слов
-function checkwords($word1, $word2) 
+function checkwords(string $word1, string $word2) 
 {
     $firstword = substr($word1, 0, 1);
     $secondword = substr($word2, 0, 1);
