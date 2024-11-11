@@ -1,6 +1,6 @@
 <?php
 //Проверка числа на четность
-function checkchet($number)
+function checkchet(int $number)
 {
     if ($number % 2 == 0) 
     {
