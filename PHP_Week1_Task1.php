@@ -1,18 +1,19 @@
 <?php
 //Проверка на отрицательное число
-function checkNegative(float $number) 
+function checkNegative(float $number) : string
 {
     if ($number < 0) 
     {
-        echo "Число $number является отрицательным";
+        return "Число $number является отрицательным";
     } 
     else 
     {
-        echo "Число $number не является отрицательным";
+        return "Число $number не является отрицательным";
     }
 
 }
 //Проверка функции
 $number = -5;
-checkNegative($number);
+$result = checkNegative($number);
+echo $result; //Вывод результата
 ?>
