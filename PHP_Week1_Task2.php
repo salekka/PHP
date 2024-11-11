@@ -6,7 +6,7 @@ function stringLength(string $string) : int
     return $length; //Возвращаем длину строки
 }
 
-// Использование функции
+//Использование функции
 $string = "Task_2"; 
 $length = stringLength($string); //Сохраняем результат в переменной
 echo "Длина строки '$string' составляет $length символов."; //Выводим результат
