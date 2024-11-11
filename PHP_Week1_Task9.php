@@ -1,6 +1,6 @@
 <?php
 //Обрезает строки в массиве
-function arrayminus(array $array, string $addsymbol) 
+function arrayMinus(array $array, string $addsymbol) 
 {
     //Проверка на входной параметр массивом
     if (!is_array($array)) //is_array — Определяет, представляет ли собой переменная массив
@@ -39,7 +39,7 @@ function arrayminus(array $array, string $addsymbol)
 //Использования функции
 $array = ["hello", "world", "TAU", "University", "Task"];
 $addsymbol = 'p'; //Буква для добавления
-$result = arrayminus($array, $addsymbol);
+$result = arrayMinus($array, $addsymbol);
 //Результат
 print_r($result);//print_r - это функция , которая выводит массив в читабельном формате
 ?>
