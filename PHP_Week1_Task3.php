@@ -1,6 +1,6 @@
 <?php
 //Получение последнего символа строки
-function LastSymbol(string $string) 
+function lastSymbol(string $string) 
 {
     //Получаем длину строки 
     $length = strlen($string);
@@ -9,8 +9,8 @@ function LastSymbol(string $string)
     if ($length > 0) 
     {
         //Получаем последний символ
-        $lastSymbol = substr($string, -1);//substr — Возвращает подстроку
-        echo "Последний символ строки '$string': '$lastSymbol'"; //Результат
+        $lastsymbol = substr($string, -1);//substr — Возвращает подстроку
+        echo "Последний символ строки '$string': '$lastsymbol'"; //Результат
     } 
     else 
     {
@@ -20,6 +20,6 @@ function LastSymbol(string $string)
 
 //Использование функции
 $string = "Hello";
-LastSymbol($string);
+lastSymbol($string);
 ?>
 //можно также использовать mb_substr и mb_strlen для более точного ответа 
