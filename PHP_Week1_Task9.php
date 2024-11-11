@@ -1,6 +1,6 @@
 <?php
 //Обрезает строки в массиве
-function arrayminus($array, $addsymbol) 
+function arrayminus(array $array, string $addsymbol) 
 {
     //Проверка на входной параметр массивом
     if (!is_array($array)) //is_array — Определяет, представляет ли собой переменная массив
