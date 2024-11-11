@@ -1,6 +1,6 @@
 <?php
 //Получение предпоследнего символа строки
-function showWord(string $stringword): ?string 
+function showWord(string $stringword): ?string //?string означает, что функция может вернуть строку или null.
 {
     //Проверка строки на более одного символа
     if (mb_strlen($stringword) > 1) //Используем mb_strlen для корректного подсчета длины строки
