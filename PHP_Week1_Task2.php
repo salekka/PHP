@@ -1,11 +1,13 @@
 <?php
-//Получение длины строки
-function stringLength(string $string) 
+// Получение длины строки
+function stringLength(string $string): int 
 {
-    $length = strlen($string); //strlen — Получает длину строки, но лучше использовать mb_strlen так как он считает кириллицу более корреткно 
-    echo "Длина строки '$string' составляет $length символов."; //Выводит результат
+    $length = mb_strlen($string); // Используем mb_strlen для корректного подсчета длины строки с учетом многобайтовых символов
+    return $length; // Возвращаем длину строки
 }
-//Использования функции
+
+// Использование функции
 $string = "Task_2"; 
-stringLength($string);
+$length = stringLength($string); // Сохраняем результат в переменной
+echo "Длина строки '$string' составляет $length символов."; // Выводим результат
 ?>
