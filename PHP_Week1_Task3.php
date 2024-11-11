@@ -1,6 +1,6 @@
 <?php
 //Получение последнего символа строки
-function LastSymbol($string) 
+function LastSymbol(string $string) 
 {
     //Получаем длину строки 
     $length = strlen($string);
