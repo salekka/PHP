@@ -18,7 +18,7 @@ function checkWords(string $word1, string $word2): string
 
 //Использование функции
 $word1 = "Hello"; 
-$word2 = "Henry";
+$word2 = "Friends";
 $result = checkWords($word1, $word2); //Сохраняет результат в переменной
 echo $result; //Выводит результат
 ?>
