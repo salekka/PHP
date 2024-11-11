@@ -13,7 +13,7 @@ function checkNegative(float $number) : string
 
 }
 //Проверка функции
-$number = -5;
+$number = -10;
 $result = checkNegative($number);
 echo $result; //Вывод результата
 ?>
