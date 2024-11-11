@@ -18,7 +18,7 @@ function lastSymbol(string $string): ?string
     }
 }
 
-// Использование функции
+//Использование функции
 $string = "Hello";
 $lastChar = lastSymbol($string); //Сохраняет результат в переменной
 
