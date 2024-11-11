@@ -1,6 +1,6 @@
 <?php
 //Получение первой цифры числа
-function firstnumber(int $number) 
+function firstNumber(int $number) 
 {
     //Преобразуем число в строку
     $numberstring = (string)$number;//Преобразование в строку позволяет легко удалить знак минус и извлечь первую цифру
@@ -18,5 +18,5 @@ function firstnumber(int $number)
 
 //Использование функции
 $number = -7952812; 
-firstnumber($number);
+firstNumber($number);
 ?>
