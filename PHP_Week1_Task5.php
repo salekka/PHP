@@ -5,7 +5,7 @@ function checkWords(string $word1, string $word2): string
     $firstword = substr($word1, 0, 1);
     $secondword = substr($word2, 0, 1);
 
-    // Сравнение первых букв
+    //Сравнение первых букв
     if (strtolower($firstword) == strtolower($secondword)) //strtolower — Приводит строку к нижнему регистру
     {
         return "Первые буквы слов '$word1' и '$word2' совпадают: '$firstword'";
