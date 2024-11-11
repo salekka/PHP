@@ -1,6 +1,6 @@
 <?php
 //Получение длины строки
-function StringLength($string) 
+function StringLength(string $string) 
 {
     $length = strlen($string); //strlen — Получает длину строки, но лучше использовать mb_strlen так как он считает кириллицу более корреткно 
     echo "Длина строки '$string' составляет $length символов."; //Выводит результат
