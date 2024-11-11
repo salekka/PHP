@@ -1,6 +1,6 @@
 <?php
 //Округление всех чисел в массиве
-function Array0($array) //array - массив
+function Array0(array $array) //array - массив
 {
     //Проверка на входной параметр массивом
     if (!is_array($array)) //is_array — Определяет, представляет ли собой переменная массив
