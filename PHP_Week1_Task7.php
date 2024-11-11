@@ -16,7 +16,7 @@ function showWord(string $stringword): ?string //?string означает, чт�
 }
 
 //Использование функции
-$stringword = "Seven7"; 
+$stringword = "Master7"; 
 $predLastChar = showWord($stringword); //Сохраняет результат в переменной
 
 if ($predLastChar !== null) 
