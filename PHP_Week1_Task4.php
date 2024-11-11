@@ -1,6 +1,6 @@
 <?php
 //Проверка числа на четность
-function checkchet(int $number)
+function checkChet(int $number)
 {
     if ($number % 2 == 0) 
     {
@@ -13,5 +13,5 @@ function checkchet(int $number)
 }
 //Использование функции
 $number = 4;
-checkchet($number);
+checkChet($number);
 ?>
