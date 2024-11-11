@@ -1,21 +1,30 @@
 <?php
-//Получение предпослденего символа строки
-function showWord(string $stringword) 
+//Получение предпоследнего символа строки
+function showWord(string $stringword): ?string 
 {
     //Проверка строки на более одного символа
-    if (strlen($stringword) > 1) //strlen — Получает длину строки
+    if (mb_strlen($stringword) > 1) //Используем mb_strlen для корректного подсчета длины строки
     {
         //Предпоследний символ строки
-        $predlastsymbol = substr($stringword, -2, 1); //substr — Возвращает подстроку. -2 = предпоследний символ, 1 = один символ
-        echo "Предпоследний символ строки '$stringword': '$predlastsymbol'"; 
+        $predlastsymbol = mb_substr($stringword, -2, 1); //Используем mb_substr для многобайтовых строк
+        return $predlastsymbol; //Возвращает предпоследний символ
     } 
     else 
     {
-        echo "Строка должна содержать более одного символа"; //Проверка
+        return null; // Возвращаем null, если строка содержит менее двух символов
     }
 }
 
 //Использование функции
 $stringword = "Seven7"; 
-showWord($stringword);
+$predLastChar = showWord($stringword); //Сохраняет результат в переменной
+
+if ($predLastChar !== null) 
+{
+    echo "Предпоследний символ строки '$stringword': '$predLastChar'"; //Выводит результат
+} 
+else 
+{
+    echo "Строка должна содержать более одного символа"; //Сообщение об ошибке
+}
 ?>
