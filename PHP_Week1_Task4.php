@@ -13,7 +13,7 @@ function checkChet(int $number): string
 }
 
 //Использование функции
-$number = 4;
+$number = 3;
 $result = checkChet($number); //Сохраняем результат в переменной
 echo $result; //Выводит результат
 ?>
